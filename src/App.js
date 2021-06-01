@@ -18,6 +18,11 @@ function App() {
           </Button>
         </div>
       ))}
+
+      <div className="alert alert-secondary">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+        officiis.
+      </div>
     </div>
   );
 }
