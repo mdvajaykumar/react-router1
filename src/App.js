@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="bg-primary text-center">React bootstrap very powerful</h1>
+
+      {[1, 2, 3, 4, 5, 6].map((index, item) => (
+        <div className="m-2">
+          {" "}
+          <Button
+            variant="secondary"
+            className="text-center justify-content-center"
+          >
+            verify
+          </Button>
+        </div>
+      ))}
     </div>
   );
 }
