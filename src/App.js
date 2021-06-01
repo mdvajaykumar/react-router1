@@ -10,30 +10,30 @@ function App() {
   return (
     <Router>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/3">
           React-Bootstrap
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/Page1">
+            <Nav.Link as={Link} to="/1">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/Page2">
+            <Nav.Link as={Link} to="/2">
               Link
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       <Switch>
-        <Route path="/page1">
+        <Route path="/1">
           <Page1></Page1>
         </Route>
-        <Route path="/page2">
+        <Route path="/2">
           <Page2></Page2>
         </Route>
-        <Route path="/page3">
+        <Route path="/3">
           <Page3></Page3>
         </Route>
         <Route path="/">
