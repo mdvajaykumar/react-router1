@@ -1,28 +1,24 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "react-bootstrap";
+import { Accordion, Button, Card } from "react-bootstrap";
 
 function App() {
   return (
     <div>
-      <h1 className="bg-primary text-center">React bootstrap very powerful</h1>
+      <h1>helloworld</h1>
 
-      {[1, 2, 3, 4, 5, 6].map((index, item) => (
-        <div className="m-2">
-          {" "}
-          <Button
-            variant="secondary"
-            className="text-center justify-content-center"
-          >
-            verify
-          </Button>
-        </div>
-      ))}
-
-      <div className="alert alert-secondary">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-        officiis.
-      </div>
+      <Accordion defaultActiveKey="0">
+        <Card>
+          <Card.Header>
+            <Accordion.Toggle as={Button} variant="link" eventKey="0">
+              Click me!
+            </Accordion.Toggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey="0">
+            <Card.Body>Hello! I'm the body</Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      </Accordion>
     </div>
   );
 }
